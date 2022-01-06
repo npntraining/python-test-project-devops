@@ -9,7 +9,7 @@ def test_simple():
     driver = webdriver.Chrome(webdriver_manager.chrome.ChromeDriverManager().install())
     driver.maximize_window()
     driver.implicitly_wait(10)
-    driver.get('http://localhost:8000/SampleApp.html')
+    driver.get('http://localhost:8000/aut-devops/SampleApp.html')
     terms = driver.find_element(By.ID, 'terms').text
     print(terms)
     next_btn = driver.find_element(By.ID, 'btn')
